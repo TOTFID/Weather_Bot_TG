@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 key_tg = os.getenv('token_bot')
 key_we = os.getenv('API_Weather')
-API_Weather = key_we
-bot = telebot.TeleBot(token=key_tg)
+API_Weather = key_we                       #get the token and paste it here (https://openweathermap.org/)
+bot = telebot.TeleBot(token=key_tg)        #get the token and paste it here (Bot_Father)
 
 
 @bot.message_handler(commands=['start'])
