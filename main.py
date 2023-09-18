@@ -4,9 +4,12 @@ import json
 import os
 from dotenv import load_dotenv
 
+#create .env file for using 'load_dotenv' (in .env mast be tokens and keys)
+
 load_dotenv()
-key_tg = os.getenv('token_bot')
-key_we = os.getenv('API_Weather')
+key_tg = os.getenv('YOUR_TOKEN')
+key_we = os.getenv('YOUR_TOKEN')
+
 API_Weather = key_we                       #get the token and paste it here (https://openweathermap.org/)
 bot = telebot.TeleBot(token=key_tg)        #get the token and paste it here (Bot_Father)
 
